@@ -4,7 +4,7 @@ from holehe.localuseragent import *
 
 async def wewash(email, client, out):
     name = "we-wash"
-    domain = "we-wash.com"
+    domain = "backend.we-wash.com"
     method = "reset-password"
     frequent_rate_limit = False
 
@@ -75,3 +75,4 @@ async def wewash(email, client, out):
             "phoneNumber": None,
             "others": None
         })
+
