@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 from termcolor import colored
 import httpx
 import trio
+from httpx_socks import AsyncProxyTransport, ProxyType
 
 from subprocess import Popen, PIPE
 import os
@@ -210,8 +211,8 @@ async def maincore():
     # Start time
     start_time = time.time()
     # Def the async client
-    client = httpx.AsyncClient(timeout=timeout)
-    # Launching the modules
+    #transport = AsyncProxyTransport.from_url('socks5://127.0.0.1:9050')
+    client = httpx.AsyncClient(timeout=timeout)    # Launching the modules
     out = []
     instrument = TrioProgress(len(websites))
     trio.lowlevel.add_instrument(instrument)

@@ -4,11 +4,11 @@ from setuptools import setup, find_packages
 
 setup(
     name='holehe',
-    version="1.61",
+    version="1.61.3",
     packages=find_packages(),
     author="megadose",
     author_email="megadose@protonmail.com",
-    install_requires=["termcolor","bs4","httpx","trio","tqdm","colorama"],
+    install_requires=["termcolor","bs4","httpx","trio","tqdm","colorama","httpx-socks"],
     description="holehe allows you to check if the mail is used on different sites like twitter, instagram , snapchat and will retrieve information on sites with the forgotten password function.",
     include_package_data=True,
     url='http://github.com/megadose/holehe',
