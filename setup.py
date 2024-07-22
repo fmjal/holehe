@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='holehe',
-    version="1.61.3",
+    version="1.61.4",
     packages=find_packages(),
     author="megadose",
     author_email="megadose@protonmail.com",
